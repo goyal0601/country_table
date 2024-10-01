@@ -1,0 +1,64 @@
+.countries-info {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.countries-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.show-all-countries {
+    padding: 12px 24px;
+    color: white;
+    background-color: rgb(119, 170, 236);
+    border: 1px solid rgb(119, 170, 236);
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.show-all-countries-disabled {
+    padding: 12px 24px;
+    color: lightgray;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: no-drop;
+}
+
+.loader-container {
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  /* The animated loading line */
+  .loading-line {
+    height: 100%;
+    width: 0;
+    background-color: #3498db;
+    position: absolute;
+    animation: loadingAnimation 2s infinite;
+  }
+
+  /* Keyframes for the animation */
+  @keyframes loadingAnimation {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }

@@ -1,0 +1,75 @@
+.clear-button {
+    text-decoration: none;
+    color: blue;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 12px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.clear-button:hover {
+    border-bottom: 1px solid blue
+}
+
+
+.country-filter-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 24px;
+}
+
+.country-filter {
+    display: flex;
+}
+
+.custom-select {
+    position: relative;
+    width: 200px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* The displayed selected option */
+  .select-selected {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+  }
+  
+  /* The options list */
+  .select-items {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 100;
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  /* Each option inside the dropdown */
+  .select-items div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Option hover effect */
+  .select-items div:hover {
+    background-color: #ddd;
+  }
+  
+  /* The selected open state */
+  .select-selected.open {
+    border-radius: 4px 4px 0 0;
+  }

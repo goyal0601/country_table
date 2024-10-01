@@ -12,7 +12,7 @@ const Country = () => {
   const [name, setName] = useState("");
   const [population, setPopulation] = useState(0);
   const [tableData, setData] = useState([]);
-  const [dataCalled, setDataCalled] = useState(false);
+  const [dataCalled, setDataCalled] = useState(false); // I think data should get called once they land on the page instead of calling it after a click
 
   useEffect(() => {
     if (dataCalled) {
